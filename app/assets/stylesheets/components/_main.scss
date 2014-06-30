@@ -1,0 +1,67 @@
+html, body {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 12pt;
+	text-align: center;
+	margin: 0;
+	color: $font;
+}
+h1 {
+	font-size: 70pt;
+}
+.container {
+	width: 100%;
+}
+
+.body-background {
+	background-color: $body;
+	transition: all 1s ease;
+}
+
+a {
+	color: $font;
+	transition: all 1s ease;
+	text-decoration: none;
+	&:hover {
+		color: $link-hover;
+	}
+}
+
+#left-holder {
+	.title {
+		@extend .body-background;
+		font-size: 16pt;
+		font-weight: bold;
+		&:hover {
+			background-color: $hover;
+		}
+		a {
+			margin: 20px 0;
+			display: block;
+		}
+	}
+	.selected {
+		background-color: $hover;
+	}	
+}
+
+#right-holder {
+	background-color: $hover;
+}
+
+.header {
+	background-color: $header;
+	padding: 20px 0;
+	&.title {
+		&:after {
+			height: 1px;
+			background-color: $hover;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+.body {
+	background-color: $body;
+}

@@ -6,15 +6,49 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>Jimmythecode</title>
 			<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700,600,600italic' rel='stylesheet' type='text/css'>
+			<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 		</head>
 	<body>
 		<div class="container">
-			<div class="row" id="<%= params[:controller] %>">
-				<%= yield %>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="row header title">
+						<div class="col-sm-12">
+							<a href="/" alt="home"><h1 class="name">Jimmy The Code</h1><i class="fa fa-home fa-4x button"></i></a>
+						</div>
+					</div>
+					<div class="row header">
+						<div class="col-xs-3">
+							<a href="http://lnkd.in/bukKWjv" alt="linkedin"><i class="fa fa-linkedin-square fa-4x"></i></a>
+						</div>
+						<div class="col-xs-3">
+							<a href="https://plus.google.com/+JamesGrant-nuclearflames/posts" alt="google plus"><i class="fa fa-google-plus-square fa-4x"></i></a>
+						</div>
+						<div class="col-xs-3">
+							<a href="mailto:xx@asdf.com" alt="mail me"><i class="fa fa-envelope-square fa-4x"></i></a>
+						</div>
+						<div class="col-xs-3">
+							<a href="https://github.com/nuclearflames" alt="github"><i class="fa fa-git-square fa-4x"></i></a>
+						</div>
+					</div>
+					<div class="row alerts">
+						<% if notice %>
+							<div class="col-sm-12">
+								<p class="notice"><%= notice %></p>			
+							</div>
+						<% end %>
+						<% if alert %>
+							<div class="col-sm-12">			
+								<p class="alert"><%= alert %></p>
+							</div>
+						<% end %>
+					</div>
+					<div class="row body" id="<%= params[:controller] %>">
+						<%= yield %>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 		<%= csrf_meta_tags %>
 	</body>

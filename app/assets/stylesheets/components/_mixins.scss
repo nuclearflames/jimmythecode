@@ -1,0 +1,18 @@
+@mixin flat-button($bg, $bgHover, $color) {
+    border: none;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    webkit-transition: 1s ease background-color;
+    transition: 1s ease background-color;
+    border: 1px solid $bg;
+    background-color: $bg;
+    color: $color;
+    &:hover {
+        background-color: $bgHover;
+    }
+}

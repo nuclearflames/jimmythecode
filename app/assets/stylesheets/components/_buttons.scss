@@ -1,0 +1,3 @@
+.flat-rounded-button {
+    @include flat-button($font, $link-hover, $hover);
+}
