@@ -1,60 +1,14 @@
-<div class="col-sm-3" id="left-holder">
+<div class="col-sm-12 accordian">
 	<div class="row">
-		<div class="col-sm-12 title selected">
-			<a>Skills</a>
+		<div class="col-sm-3">
+			<% @sections.each do |f|%>
+				<a class="section-title" data-title="<%= f.title %>"><%= f.title %></a>
+			<% end %>
 		</div>		
-	</div>
-	<div class="row title">
-		<div class="col-sm-12">
-			<a>2014</a>
-		</div>		
-	</div>
-	<div class="row title">
-		<div class="col-sm-12">
-			<p>2013</p>
-		</div>		
-	</div>
-	<div class="row title">
-		<div class="col-sm-12">
-			<p>2012</p>
-		</div>		
-	</div>
-	<div class="row title">
-		<div class="col-sm-12">
-			<p>2011</p>
-		</div>		
-	</div>
-	<div class="row title">
-		<div class="col-sm-12">
-			<p>2010</p>
-		</div>		
-	</div>
-</div>
-<div class="col-sm-9" id="right-holder">
-	<div class="row">
-		<div class="col-sm-12">
-			<p>tewst</p>
-			<p>tewst</p>
-			<p>tewst</p>
-			<p>tewst</p>
-			<p>tewst</p>
-			<p>tewst</p>
-			<p>tewst</p>
-		</div>		
-	</div>
-	<div class="row">
-		<div class="col-sm-12">
-			<p>tewst</p>
-		</div>		
-	</div>
-	<div class="row">
-		<div class="col-sm-12">
-			<p>tewst</p>
-		</div>		
-	</div>
-	<div class="row">
-		<div class="col-sm-12">
-			<p>tewst</p>
-		</div>		
+		<div class="col-sm-9">
+			<% @sections.each do |f|%>
+				<span class="section-content" data-title="<%= f.title %>"><%= f.content %></span>
+			<% end %>
+		</div>
 	</div>
 </div>

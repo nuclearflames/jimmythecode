@@ -26,26 +26,53 @@ a {
 	}
 }
 
-#left-holder {
-	.title {
-		@extend .body-background;
-		font-size: 16pt;
-		font-weight: bold;
-		&:hover {
-			background-color: $hover;
-		}
-		a {
-			margin: 20px 0;
-			display: block;
-		}
-	}
-	.selected {
-		background-color: $hover;
-	}	
+input, textarea {
+	width: 80%;
 }
 
-#right-holder {
+.accordian {
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+}
+
+.section-title {
+	@extend .body-background;
+	font-size: 16pt;
+	font-weight: bold;
+	display: block;
+	padding: 10px 0;
+	position: relative;
+	cursor: pointer;
+	&:hover {
+		background-color: $hover;
+	}
+	&.selected {
+		background-color: $hover;
+		&:after {
+			left: 100%;
+			top: 50%;
+			border: solid transparent;
+			content: " ";
+			position: absolute;
+			border-left-color: $hover;
+			border-width: 15px;
+			margin-top: -15px;
+		}
+	}
+}
+
+.section-content {
 	background-color: $hover;
+	word-break: break-word;
+	display: none;
+	padding: 20px 10px;
+	&.selected {
+		display: block;
+	}
 }
 
 .header {
