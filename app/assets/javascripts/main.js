@@ -1,13 +1,12 @@
 $(function () {
 
-	var init = function (callback) {
-		var sectionsTitles = $(".section-title");
+	var
 
-			sectionsTitles.first().addClass("selected");
+	ckeditor = function () {
 
-			findSelectedContent(sectionsTitles.first())
+		//Add the CKeditor to the page
+        CKEDITOR.replace("ckeditor");
 
-			callback();
 	},
 
 	findSelectedContent = function (selected) {
@@ -32,6 +31,21 @@ $(function () {
 			$(this).addClass("selected");
 			findSelectedContent($(this));		
 		})
+	},
+
+	init = function (callback) {
+		
+		if ($("#ckeditor").length) {
+			ckeditor();
+		}
+
+		var sectionsTitles = $(".section-title");
+
+			sectionsTitles.first().addClass("selected");
+
+			findSelectedContent(sectionsTitles.first())
+
+			callback();
 	};
 
 

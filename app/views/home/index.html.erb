@@ -7,7 +7,7 @@
 		</div>		
 		<div class="col-sm-9">
 			<% @sections.each do |f|%>
-				<span class="section-content" data-title="<%= f.title %>"><%= f.content %></span>
+				<span class="section-content" data-title="<%= f.title %>"><%= f.content.html_safe  %></span>
 			<% end %>
 		</div>
 	</div>
