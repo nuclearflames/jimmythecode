@@ -12,6 +12,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
+					<% if user_signed_in? %>
+						<div class="row userBar">
+							<div class="col-sm-12">
+								<%= current_user.email %>
+                        		<%= button_to "Logout", "/users/sign_out", :method => :delete %>
+							</div>							
+						</div>
+					<% end %>
 					<div class="row header title">
 						<div class="col-sm-12">
 							<a href="/" alt="home"><h1 class="name">Jimmy The Code</h1><i class="fa fa-home fa-4x button"></i></a>
