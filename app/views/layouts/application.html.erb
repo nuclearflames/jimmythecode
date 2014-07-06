@@ -13,10 +13,10 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<% if user_signed_in? %>
-						<div class="row userBar">
+						<div class="row user-bar">
 							<div class="col-sm-12">
 								<%= current_user.email %>
-                        		<%= button_to "Logout", "/users/sign_out", :method => :delete %>
+                        		<%= button_to "Logout", "/users/sign_out", :method => :delete, :class=>"flat-rounded-button" %>
 							</div>							
 						</div>
 					<% end %>

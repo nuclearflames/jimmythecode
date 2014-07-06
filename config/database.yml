@@ -32,5 +32,4 @@ production:
   reconnect: false
   database: jimmythecode_production
   pool: 5
-  username: postgres
   password: chelsea
