@@ -44,3 +44,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 
 gem 'rails_12factor', group: :production
+
+gem 'mime-types'
