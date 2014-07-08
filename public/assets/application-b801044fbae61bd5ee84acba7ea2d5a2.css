@@ -1839,8 +1839,8 @@ td.visible-print {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/assets/fontawesome-webfont.eot?v=4.1.0");
-  src: url("/assets/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("/assets/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("/assets/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("/assets/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
+  src: url(/assets/fonts/fontawesome-webfont.eot?v=4.1.0);
+  src: url(/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0) format("embedded-opentype"), url(/assets/fonts/fontawesome-webfont.woff?v=4.1.0) format("woff"), url(/assets/fonts/fontawesome-webfont.ttf?v=4.1.0) format("truetype"), url(/assets/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -4342,83 +4342,6 @@ td.visible-print {
   content: "\f1e2";
 }
 
-/* line 1, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-html, body {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 12pt;
-  text-align: center;
-  margin: 0;
-}
-
-/* line 7, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-h1 {
-  font-size: 70pt;
-}
-
-/* line 10, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-.container {
-  width: 100%;
-}
-
-/* line 14, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-.body-background, #left-holder .title {
-  background-color: #cff09e;
-  transition: all 1s ease;
-}
-
-/* line 19, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-a {
-  color: black;
-  transition: all 1s ease;
-}
-/* line 22, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-a:hover {
-  color: #0b486b;
-}
-
-/* line 28, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-#left-holder .title {
-  font-size: 16pt;
-  font-weight: bold;
-}
-/* line 32, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-#left-holder .title:hover {
-  background-color: #a8dba8;
-}
-/* line 35, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-#left-holder .title a {
-  margin: 20px 0;
-  display: block;
-}
-/* line 40, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-#left-holder .selected {
-  background-color: #a8dba8;
-}
-
-/* line 45, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-#right-holder {
-  background-color: #a8dba8;
-}
-
-/* line 49, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-.header {
-  background-color: #79bd9a;
-  padding: 20px 0;
-}
-/* line 52, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-.header.title:after {
-  height: 1px;
-  background-color: #a8dba8;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 61, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
-.body {
-  background-color: #cff09e;
-}
-
 /* line 1, C:/Sites/jimmythecode/app/assets/stylesheets/components/_buttons.scss */
 .flat-rounded-button {
   border: none;
@@ -4427,7 +4350,7 @@ a:hover {
   -khtml-border-radius: 2px;
   border-radius: 2px;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0;
   font-size: 20px;
   webkit-transition: 1s ease background-color;
   transition: 1s ease background-color;
@@ -4438,4 +4361,127 @@ a:hover {
 /* line 15, C:/Sites/jimmythecode/app/assets/stylesheets/components/_mixins.scss */
 .flat-rounded-button:hover {
   background-color: #0b486b;
+}
+
+/* line 1, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+html, body {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12pt;
+  text-align: center;
+  margin: 0;
+  color: #333333;
+}
+
+/* line 8, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+h1 {
+  font-size: 70pt;
+}
+
+/* line 11, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.container {
+  width: 100%;
+}
+
+/* line 15, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.body-background, .section-title {
+  background-color: #cff09e;
+  transition: all 1s ease;
+}
+
+/* line 20, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+a {
+  color: #333333;
+  transition: all 1s ease;
+  text-decoration: none;
+}
+/* line 24, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+a:hover {
+  color: #0b486b;
+}
+
+/* line 29, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+table {
+  width: 100%;
+}
+/* line 31, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+table p {
+  margin: 5px 0;
+}
+
+/* line 37, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.accordian .left {
+  float: left;
+}
+/* line 40, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.accordian .right {
+  float: right;
+}
+
+/* line 45, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.section-title {
+  font-size: 16pt;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+  position: relative;
+  cursor: pointer;
+}
+/* line 53, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.section-title:hover {
+  background-color: #a8dba8;
+}
+/* line 56, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.section-title.selected {
+  background-color: #a8dba8;
+}
+/* line 58, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.section-title.selected:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  border-left-color: #a8dba8;
+  border-width: 15px;
+  margin-top: -15px;
+}
+
+/* line 71, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.section-content {
+  background-color: #a8dba8;
+  word-break: break-word;
+  display: none;
+  padding: 20px 10px;
+}
+/* line 76, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.section-content.selected {
+  display: block;
+}
+
+/* line 81, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.header {
+  background-color: #79bd9a;
+  padding: 20px 0;
+}
+/* line 85, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.header.title:after {
+  height: 1px;
+  background-color: #a8dba8;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 95, C:/Sites/jimmythecode/app/assets/stylesheets/components/_main.scss */
+.body {
+  background-color: #cff09e;
+}
+
+/* line 1, C:/Sites/jimmythecode/app/assets/stylesheets/components/_sections.scss */
+#sections {
+  word-break: break-word;
+}
+/* line 4, C:/Sites/jimmythecode/app/assets/stylesheets/components/_sections.scss */
+#sections input, #sections textarea {
+  width: 100%;
 }
