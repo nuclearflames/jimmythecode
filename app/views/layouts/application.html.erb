@@ -27,6 +27,7 @@
 							<div class="col-sm-12">
 								<%= current_user.email %>
                         		<%= button_to "Logout", "/users/sign_out", :method => :delete, :class=>"flat-rounded-button" %>
+                        		<%= link_to "Sections", "/sections" %>
 							</div>							
 						</div>
 					<% end %>
