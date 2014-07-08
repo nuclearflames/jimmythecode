@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
 	def index
-		@sections = Section.all
+		@sections = Section.order(:title)
 	end
 end
