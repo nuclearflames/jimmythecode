@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 70pt;
+        margin: 20px 0;
+    }
+    .section-title {
+        padding: 10px 0;
+        &.selected:after {
+            left: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            position: absolute;
+            border-left-color: $hover;
+            border-width: 15px;
+            margin-top: -15px;
+        }
+    }
+}
